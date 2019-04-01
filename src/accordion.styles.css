@@ -1,0 +1,40 @@
+.accordion-wrapper {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  overflow-y: scroll;
+  border: 1px solid;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-control {
+  display: block;
+  text-align: left;
+  width: 100%;
+  min-width: 80px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 6px;
+  font-size: 20px;
+  border: none;
+  background-color: lightgray;
+}
+
+.accordion-control:focus {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 2px;
+  background-color: darkgray;
+}
+
+.accordion-contents {
+  margin-bottom: 12px;
+}
+
+.accordion-contents[aria-hidden='true'] {
+  display: none;
+}
